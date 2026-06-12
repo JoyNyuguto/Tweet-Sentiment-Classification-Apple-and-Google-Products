@@ -69,11 +69,11 @@ It was collected during the **SXSW (South by Southwest)** conference. Human rate
 ## 3. DATA CLEANING
 
 Steps taken:
-- ✅ Removed **1 missing** tweet_text row
-- ✅ Removed **22 duplicate** tweets
-- ✅ Removed **ambiguous labels** ("I can't tell")
-- ✅ Excluded `product` column (63% missing values)
-- ✅ Checked tweet length for outliers
+-  Removed **1 missing** tweet_text row
+-  Removed **22 duplicate** tweets
+-  Removed **ambiguous labels** ("I can't tell")
+-  Excluded `product` column (63% missing values)
+-  Checked tweet length for outliers
 
 ---
 
@@ -204,3 +204,12 @@ Multi-layer perceptron trained on dense TF-IDF array. Captures non-linear featur
 ---
 
 
+##  Next Steps
+
+1. **Deploy** the Naive Bayes model via a FastAPI endpoint connected to the Twitter/X API for real-time sentiment monitoring.
+
+2. **Expand** the classifier to multiclass — include neutral tweets (currently 60.3% of data) for richer brand insights.
+
+3. **Fine-tune** a BERT-based transformer model on Twitter data to improve handling of sarcasm, slang, and class imbalance.
+
+---
